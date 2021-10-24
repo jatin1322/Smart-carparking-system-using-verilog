@@ -19,6 +19,7 @@ Coming from left and turning down
 Coming from right 
  Coming from down and turning right
 
+It would be implemented as RTL by use of verilog
 
  Designing of an Arthimetic Logic Unit (ALU)              // Proposal 2
 
@@ -30,3 +31,4 @@ To design a logic unit that enables computer to perform mathematical operations 
 Functionality-
 This project performs simple addition,subtraction,multiplication,division,logical left shift,logical right shift and other logic operations such as OR,AND,XOR,NOR,NAND.
 
+It would be implemented as RTL by use of verilog
