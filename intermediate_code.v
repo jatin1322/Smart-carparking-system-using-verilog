@@ -1,6 +1,9 @@
 //Smart Car Parking System
 //Tanuj Kumar 2020csb1134
 //Jatin 2020csb1090
+ 
+
+
 
 //Verilog Code for Car parking System 
 module CAR_Parking_System( 
@@ -32,6 +35,9 @@ module CAR_Parking_System(
  reg BLUE_tmp,YELLOW_tmp;
 
 
+ 
+ 
+ 
  // Next State
  always @(negedge RESET or posedge CLOCK)//Asynchronus operation which means it depends on both CLOCK and RESET
  begin
@@ -42,6 +48,9 @@ module CAR_Parking_System(
  end
 
 
+ 
+ 
+ 
  // Wait counter 
  //It will wait for correct password if this state is "HOLD"
  always @(negedge RESET or posedge CLOCK)//Asynchronus operation which means it depends on both CLOCK and RESET
@@ -55,8 +64,15 @@ module CAR_Parking_System(
  end
  
 
+ 
+ 
+ 
  //Now left two more always block 
 
+ 
  //One for changing state in continuity and will consider current state value in case loop
 
+ 
  //Second for Synchronised operation which only considers positive edge of CLOCK and will consider current state value in case loop
+
+ 
