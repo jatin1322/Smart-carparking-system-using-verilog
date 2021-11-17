@@ -33,14 +33,18 @@ To display that car can pass through the parking system.
 1) Initial STATE :
 Initial is the default state, where Entrance sensor detects. If the sensor is off, the system will not perform any actions. When the entrance sensor detects the car has come, state switched to HOLD.
 
+
 2) HOLD:
 In HOLD state, Blue light will turned ON and display will show ‘Enter Password’. Car user need to type the password to get entry through the parking system. If the password is Incorrect it will go to the Incorrect_Password state and if the password is correct it will go to the Correct_Password state.
+
 
 3) Correct_Password:
 If the password entered correctly in hold state, Green light will show in Correct_Password state and it will display ‘GO’ message indicating that you can enter in the parking system. After crossing the car through the parking system, It will go to the Initial state if there is no other car coming. If another car is coming it will turned on both sensors sensor_entrance==1 && sensor_exit == 1 and so it will go the STOP state.
 
+
 4) Incorrect_Password:
 If the password is Incorrect, Incorrect password state will show Blue light and will display that password is incorrect. It will give driver another chance to enter password and will stay in the same state. If driver enter Correct password after the first failed trial, it will go to the Correct password state, where driver can pass through this system.
+
 
 5) END:
 If another car came after the first car has gone, it will ask to END and enter the password showing Blue light. If then driver entered the Correct password it will go to the Correct state else it will stay in the same state and ask for the pin again.
