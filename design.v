@@ -160,5 +160,4 @@ assign Green = GREEN_tmp;
 //assign Count_CAR[1] = totalcars[1];
 //assign Count_CAR[0] = totalcars[0];
 //end
-//Seven_segment_LED_Display_Controller g1(Count_CAR);
 endmodule
