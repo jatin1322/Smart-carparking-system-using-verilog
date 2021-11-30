@@ -13,8 +13,7 @@ module CAR_Parking_System(
 input [3:0] PASSWORD,
 output wire Green,
 output wire Red,
-// output reg [6:0] H1,//These 7 bits output H1 and H2 are used for showing 7 segment display of five states
-// output reg [6:0] H2
+
 output reg [3:0] Count_CAR,
 output reg [2:0] INDICATOR
 
